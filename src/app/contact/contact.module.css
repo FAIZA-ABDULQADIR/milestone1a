@@ -1,0 +1,141 @@
+/* Container with background and centered content */
+.container {
+    min-height: 100vh;
+    background-image: url('/background1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px); /* Subtle blur effect for a glassmorphic style */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-position: top;
+    }
+}
+
+/* Contact page styling */
+.contactPage {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Glass effect */
+    text-align: center;
+    color: #f1f1f1;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading and intro text */
+.contactPage h1 {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.contactPage p {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.formGroup label {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent for effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: #f1f1f1;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Darker background on focus */
+    border-color: #ffcc00; /* Accent color on focus */
+}
+
+/* Submit button styling */
+.submitButton {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.submitButton:active {
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+/* Social links styling */
+.socialLinks {
+    margin-top: 30px;
+}
+
+.socialLinks p {
+    font-size: 16px;
+    color: #ffcc00;
+}
+
+.socialLinks a {
+    margin: 0 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.socialLinks a:hover {
+    color: #ffd633; /* Lighter yellow on hover */
+    text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

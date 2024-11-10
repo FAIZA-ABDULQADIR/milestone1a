@@ -1,0 +1,90 @@
+/* Main Container */
+.inspireContainer {
+    display: flex;
+    background-image: url('/background1.png');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    min-height: 100vh;
+  }
+  
+  .pageTitle {
+    font-size: 60px;
+    font-weight: bold;
+    color: #e1d382;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+
+  }
+  
+  /* Card Container */
+  .cardContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Individual Card */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .imageContainer {
+    margin-bottom: 40px;
+  }
+  
+  .image {
+    border-radius: 80%;
+    object-fit:fill;
+  }
+  
+  .cardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d3a4f;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .pageTitle {
+      font-size: 28px;
+    }
+  }
+  
