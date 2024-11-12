@@ -1,4 +1,5 @@
 import style from "../about-me/about-me.module.css"
+import image from "../../public/background1.png"
 
 export default function About() {
   return (
